@@ -1,0 +1,158 @@
+<main>
+        <section>
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="imagensproduto/mesa.jpg" alt=""></div>
+                        <div class="titulo"> <p>Mesas e Cadeiras</p></div>
+                </div>
+            </a>
+
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="imagensproduto/toalha.jpg" alt=""></div>
+                        <div class="titulo"> <p>Toalhas e Capas</p></div>
+                </div>
+            </a>
+
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="imagensproduto/pratos.jpg" alt=""></div>
+                        <div class="titulo"> <p>Pratos e Talheres</p></div>
+                </div>
+            </a>
+
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="foto-p.png" alt=""></div>
+                        <div class="titulo"> <p>Utensílio para jantar</p></div>
+                </div>
+            </a>
+
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="foto-p.png" alt=""></div>
+                        <div class="titulo"> <p>Conservadora</p></div>
+                </div>
+            </a>
+
+            <a href="" class="linkprod">
+                <div class="produtos">
+                        <div class="imag-prod"><img src="foto-p.png" alt=""></div>
+                        <div class="titulo"> <p>Som, Projetor e Iluminação</p></div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <address>
+        <p>Fones: 98817-5013 988912928</p>
+        <p>Avenida Valparaiso, 280 - Sitio São Joao <br> fortaleza-Ce</p>
+
+    </address>
+    <footer>
+        <div >
+            <p>Festa Locações ME <br>
+            CNPJ: 000.000.000/0001-50
+            </p>
+        </div>
+    </footer>
+
+
+
+----------------------------------------------------------------------------------------
+
+section{
+    width: calc(100% - 150px);
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+   
+  
+    
+}
+
+.linkprod{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+
+.linkprod:hover{
+    background-color: rgba(146, 143, 143, 0.404) ;
+}
+
+.produtos{
+width: 250px;
+height: 250px;
+
+margin: 10px;
+display: flex;
+flex-flow: column;
+align-content: center;
+text-align: center;
+
+overflow: hidden;
+text-decoration: none;
+}
+
+
+
+
+.imag-prod{
+    flex: 5;
+    width: 240px;
+    height: 220px;
+    margin: 0px;
+    align-self: center;
+    align-content: center;
+    border: 2px solid red;
+    overflow: hidden;
+    
+}
+
+.imag-prod img{
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.titulo{
+   
+    flex: 1;
+    color: rgb(0, 0, 0);
+   
+    font-size: 20px;
+  
+}
+.titulo p{
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+address{
+    width: 100%;
+    height: auto;
+    background-color:rgb(255, 115, 0);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(124, 10, 10);
+    padding: 8px;
+}
