@@ -1,0 +1,426 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito';
+    color:#555;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito/Nunito-Regular.ttf);
+}
+
+
+:root{
+    --orange: rgb(255, 142, 49);
+    --azul: #1c74b8d5;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-image: radial-gradient( rgba(255, 136, 0, 0.712), rgb(184, 3, 3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 450px;
+}
+
+#contato{
+    width: 100%;
+    height: 30px;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#txtcont{
+    display: flex;
+}
+
+#txtcont div{
+    display: flex;
+}
+
+
+#contato p{
+    color: white;
+    font-weight: bold;
+    margin: auto 15px auto 3px;
+}
+
+#bttmenu{
+    display: block;
+    justify-self: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 2px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+#bttmenu div{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 3px;
+   
+    
+}
+
+.imgcont{
+    height: 20px;
+}
+
+#menu{
+    width: 100%;
+    height: 0px;
+    margin: auto;
+    position: absolute;
+    z-index: 9999;
+    background-color: var(--azul);
+    overflow: hidden;
+    transition: 0.6s;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.opmenu{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 0px 60px;
+  margin: auto ;  
+  
+}
+#menu a{
+    text-decoration: none;
+}
+
+.opmenu:hover{
+    background-color: #1c74b8f6;
+}
+
+#entrega{
+    width: 100%;
+    height: 150px;
+    background-color: var(--orange);
+}
+
+#containerprod{
+    max-width:800px;
+    margin: 30px auto;
+}
+
+.material{
+    display: flex;
+    max-width: 600px;
+    height: 220px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+
+.imgmat img{
+    width:300px;
+}
+
+.txtmat{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.txtmat p{
+    margin: 20px;
+    text-align: left;
+}
+
+.linha{
+    width: 70%;
+    height: 0.7px;
+    background-color: var(--azul);
+    margin:0px auto ;
+}
+
+.linham{
+    width: 90%;
+    height: 0.7px;
+    background-color: var(--orange);
+    margin: 5px auto ;
+}
+
+
+#entrega{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+#txtentr{
+    flex: 1;
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#imgentr{
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#imgentr img{
+    width: 150px;
+}
+
+#pagamento{
+    max-width: 800px;
+    height: auto;
+    background-color: var(--azul);
+    margin: auto;
+   display: block;
+   padding: 20px;
+   text-align: center;
+   color: white;
+}
+
+#pagamento div{
+    margin: auto;
+}
+
+#imgpag{
+    display: flex;
+}
+
+#imgpag img{
+    width: 70px;
+}
+
+#wtzp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#wtzp img{
+    width: 80px;
+    
+}
+
+#wtzp img:hover{
+    width: 90px;
+    
+}
+
+article{
+    text-align: justify;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+article h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    width:100%;
+    background-color: #bbb;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot{
+    margin:10px 50px;
+}
+
+.foot img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.inf{
+    display: flex;
+    margin: 10px;
+}
+
+@media(max-width:680px){
+    #containerprod{
+        max-width: calc(100% - 50px);
+        margin: 30px auto;
+    }
+    .material{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      
+        margin: 20px auto;
+        
+    }
+    .material .imgmat{
+       
+        width: 300px;
+    }
+
+    header img{
+        width: 250px;
+    }
+    
+    #wtzp{
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+    }
+    
+    #wtzp img{
+        width: 50px;
+
+    }
+
+    #entrega{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        height: auto;
+        margin: auto;
+        align-items: center;
+    }
+    
+    #txtentr{
+        flex: 1;
+        margin: 15px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    #imgentr{
+        flex: 1;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #imgentr img{
+        width: 150px;
+    }
+    
+    #pagamento{
+        max-width: 600px;
+        height: auto;
+        background-color: var(--azul);
+        margin: auto;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    #pagamento div{
+        margin: auto;
+    }
+    
+    #imgpag{
+        display: flex;
+    }
+    
+    #imgpag img{
+        width: 40px;
+    }
+
+    footer{
+        width:100%;
+        background-color: #bbb;
+        height: 200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot{
+        margin:10px 10px;
+    }
+    
+    .foot img{
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .foot h2{
+        font-size: 15px;
+    }
+
+    .foot p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .inf{
+        display: flex;
+        margin: 10px;
+    }
+
+    #contato{
+        width: 100%;
+        height: auto;
+        background-color: var(--azul);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    #txtcont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #txtcont div{
+        display: flex;
+    }
+
+   
+    #contato p{
+        color: white;
+        font-weight: bold;
+        margin: auto 15px auto 3px;
+        font-size: 12px;
+    }
+
+    .opmenu{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        padding: 0px 10px;
+        margin: auto ;  
+        font-size: 12px;
+    }
+
+    .linham{
+        width: 100%;
+        height: 1.5px;
+        background-color: var(--orange);
+        margin: 5px auto ;
+    }
+}
